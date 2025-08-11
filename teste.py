@@ -4,10 +4,15 @@ print(cumprimento("Maria Luiza Ratto"))
 
 import random
 
-def sorteia_media():
-    numeros = [random.randint(1, 100) for _ in range(7)]  
-    media = sum(numeros) / len(numeros)
-    return media
+import random
 
-print("Média dos 7 números sorteados:", sorteia_media())
+def sorteia_media():
+    numeros = [random.randint(1, 100) for _ in range(7)]
+    media = sum(numeros) / len(numeros)
+    return numeros, media
+
+numeros_sorteados, media = sorteia_media()
+print("Números sorteados:", numeros_sorteados)
+print(f"Média dos 7 números sorteados: {media:.2f}")
+
 
