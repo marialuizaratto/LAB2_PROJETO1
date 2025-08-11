@@ -10,3 +10,4 @@ def sorteia_media():
     return media
 
 print("Média dos 7 números sorteados:", sorteia_media())
+
